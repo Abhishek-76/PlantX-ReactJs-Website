@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+:root{
+  --header-height:3.5rem;
+  --hue: 152;
+  --first-color:hsl(var(--hue)), 24%,32%,
+}
+
