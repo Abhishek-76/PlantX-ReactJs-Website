@@ -1,38 +1,44 @@
-ul {
-    list-style: none;
-  }
+
   
-  ul li:before {
-    content: '✅';
-  }
+  
+  
   .parent {
     display: grid;
-    background-color: rgb(16, 65, 23);
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-columns: auto auto auto auto ;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    text-align: center;
+    grid-gap: 20px 50px;
+    background-color: rgb(121, 197, 121);
     align-items: center;
+    border-radius: 25px;
+    
     }
     
-    .div4 { 
-        grid-area: 2 / 4 / 5 / 5;
-        align-items: center;
-        color: aliceblue;
-     }
-    .div3 { 
-        grid-area: 2 / 3 / 5 / 4;
-        align-items: center;
-        color: aliceblue;
+    .div1 { grid-area: 3 / 2 / 4 / 3; background-color: azure; border-radius: 25px;}
+    .div2 { grid-area: 3 / 3 / 4 / 4; background-color: azure; border-radius: 25px;}
+    .div2 { grid-area: 3 / 3 / 4 / 4; background-color: azure; border-radius: 25px;}
+    .div3 { grid-area: 3 / 4 / 4 / 5; background-color: azure; border-radius: 25px; }
+    .card_title { grid-area: 2 / 3 / 3 / 4;}
 
-     }
-    .div2 { 
-        grid-area: 2 / 2 / 5 / 3;
-        align-items: center;
-        color: aliceblue;
-     }
-    .div1 { 
-        grid-area: 1 / 1 / 6 / 6; 
-        align-items: center;
-        color: aliceblue;
+.number_box{
+  background-color: rgb(121, 197, 121);
+  position: absolute;
+  
+}
+  
+      
+.container{
+        display: flex;
+        padding-top: 10px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+    }
+    .description{
+      display: flex;
+    } 
+    
+    .card{
+      display: inline;
     }
