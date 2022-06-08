@@ -1,25 +1,31 @@
 .home{
+    
     padding: 3.5rem 0 2rem;
   }
   
+  
   .home__container{
+    display:flex ;
     position: relative;
     row-gap: 2rem;
   }
-  
+   
   .home__img{
-    width: 200px;
-    justify-self: center;
+    
+    width: 400px;
+    justify-self: left;
   }
   
   .home__title{
-    font-size: 2rem;
+    
+    font-size: 4rem;
     line-height: 140%;
     margin-bottom: 1rem;
   }
   
   .home__description{
     margin-bottom:  2.5rem;
+    font-size: 2rem;
   }
   
   .home__social{
@@ -27,7 +33,7 @@
     top: 2rem;
     right: -1rem;
     display: grid;
-    justify-items: center;
+    justify-items: right;
     row-gap: 3.5rem;
   }
   
@@ -53,6 +59,7 @@
     display: inline-flex;
     flex-direction: column;
     row-gap: .25rem;
+    
   }
   
   .home__social-link{
@@ -62,5 +69,41 @@
   }
   
   .home__social-link:hover{
+    transform: translateX(.25rem);
+  }
+  .button{
+    display: inline-block;
+    background-color: hsl(152, 24%, 32%);
+    color: #FFF;
+    padding: 1rem 1.75rem;
+    border-radius: .5rem;
+    font-weight: 500;
+    transition: .3s;
+  }
+  
+  .button:hover{
+    background-color: hsl(152, 24%, 28%);
+  }
+  
+  .button__icon{
+    transition: .3s;
+  }
+  
+  .button:hover .button__icon{
+    transform: translateX(.25rem);
+  }
+  
+  .button--flex{
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+  }
+  
+  .button--link{
+    color: hsl(152, 24%, 32%);
+    font-weight: 500;
+  }
+  
+  .button--link:hover .button__icon{
     transform: translateX(.25rem);
   }

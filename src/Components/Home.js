@@ -1,12 +1,13 @@
 import homeimg from '../Assets/home.png'
+import fbimg from '../Assets/fb_icon.png'
+import instaimg from '../Assets/insta-icon.png'
+import twitimg from '../Assets/twit_icon.png'
 import './Home.css'
 const Home=()=>
 {
     return(
       <div className='home'>
-        <div className="home__container container grid">
-          <img src={homeimg} alt="" className="home__img"/>
-
+        <div className="home__container ">
             <div className="home__data">
               <h1 className="home__title">
                 Plants will make  your life better
@@ -18,20 +19,28 @@ const Home=()=>
               <a href="#about" className="button button--flex">
                 Explore ↘
               </a>
-              </div>
+          </div>
+          <img src={homeimg} alt="" className="home__img"/>
 
               <div className="home__social">
                 <span className="home__social-follow">Follow Us</span>
                   <div className="home__social-links">
-                    <a href="https://www.facebook.com/" target="_blank" className="home__social-link">
-                      Fb
+                    <div className="home__social-link">
+                      <a href="https://www.facebook.com/" >
+                      <img src={fbimg} alt=''/>
                     </a>
-                    <a href="https://www.instagram.com/" target="_blank" className="home__social-link">
-                      Insta
+                    </div>
+                    <div className="home__social-link">
+                      <a href="https://www.instagram.com/"  >
+                      <img src={instaimg} alt=''/>
                     </a>
-                    <a href="https://twitter.com/" target="_blank" className="home__social-link">
-                      twitter
+                    </div>
+                    <div className="home__social-link">
+                      <a href="https://twitter.com/"  >
+                      <img src={twitimg} alt=''/>
                     </a>
+                    </div>
+                    
                   </div>
                 </div>
               </div>
