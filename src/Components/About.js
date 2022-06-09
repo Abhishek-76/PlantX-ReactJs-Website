@@ -3,45 +3,44 @@ import  './About.css'
 const About=()=>{
     return(
       
-      <section class="about section container" id="about">
-        <div class="about__container grid">
-          <img src={aboutimg} alt="" class="about__img"/>
-          <div class="about__data">
-            <h2 class="section__title about__title">
+      <div className='sec'>
+        <div className="about__container">
+          <div className="about__img">
+            <img src={aboutimg} alt=""/>
+          </div>
+          
+          <div className="about__data">
+            <h2 className="about__title">
               Who we really are & <br/> why choose us
             </h2>
 
-            <p class="about__description">
+            <p className="about__description">
               We have over 4000+ unbiased reviews and our customers 
               trust our plant process and delivery service every time
             </p>
 
-            <div class="about__details">
-              <p class="about__details-description">
-              <i class="ri-checkbox-fill about__details-icon"></i>
-                                We always deliver on time.
-                            </p>
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                We give you guides to protect and care for your plants.
-                            </p>
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                We always come over for a check-up after sale.
-                            </p>
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                100% money back guaranteed.
-                            </p>
-                        </div>
-
-                        <a href="#" class="button--link button--flex">
-                            Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
-    
+            <div className="about__details">
+              <div className="about__details-description">
+              <ul>
+                <li>We always deliver on time.</li>
+                <li>We give you guides to protect and care for your plants.</li>
+                <li>We always come over for a check-up after sale.</li>
+                <li>100% money back guaranteed.</li>
+              </ul>
+              </div>
+              <div >
+              <a href="Product" class="button--link button--flex">
+                Shop Now ↘
+              </a>
+            </div>
+              
+             
+              
+            </div>
+          </div>
+        </div>
+        </div>
+        
     )
 }
 export default About;
