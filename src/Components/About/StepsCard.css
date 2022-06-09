@@ -1,0 +1,53 @@
+.steps__bg{
+    background-color: hsl(152, 24%, 32%);
+    padding: 3rem 2rem 2rem;
+    border-radius: 1rem;
+  }
+  
+  .steps__container{
+    display: flex;
+    gap: 2rem;
+    padding-top: 1rem;
+    flex-direction: row;
+  }
+  
+  
+  .steps__title{
+    color: #FFF;
+  }
+  .section__title-center{
+    font-size: 24px;
+    margin-bottom: 2rem;
+    line-height: 140%;
+    text-align: center;
+  }
+  
+  .steps__card{
+    background-color: #FFF;
+    padding: 2.5rem 3rem 2rem 1.5rem;
+    border-radius: 1rem;
+  }
+  
+  .steps__card-number{
+    display: inline-block;
+    background-color: hsl(152, 24%, 28%);;
+    color: #FFF;
+    padding: .5rem .75rem;
+    border-radius: .25rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: .3s;
+  }
+  
+  .steps__card-title{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .steps__card-description{
+    font-size: .813;
+  }
+  
+  .steps__card:hover .steps__card-number{
+    transform: translateY(-.25rem);
+  }

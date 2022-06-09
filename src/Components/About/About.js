@@ -1,5 +1,7 @@
+import React from 'react'
 import aboutimg from '../Assets/about.png'
-import  './About.css'
+import './About.css'
+import StepsCard from './StepsCard'
 const About=()=>{
     return(
       
@@ -10,15 +12,17 @@ const About=()=>{
           </div>
           
           <div className="about__data">
-            <h2 className="about__title">
-              Who we really are & <br/> why choose us
-            </h2>
-
-            <p className="about__description">
+            <div className="about__title">
+              <h2>Who we really are & <br/> why choose us</h2>
+            </div>
+            
+            <div className="about__description">
+            <p >
               We have over 4000+ unbiased reviews and our customers 
               trust our plant process and delivery service every time
             </p>
-
+            </div>
+            
             <div className="about__details">
               <div className="about__details-description">
               <ul>
@@ -34,11 +38,10 @@ const About=()=>{
               </a>
             </div>
               
-             
-              
             </div>
           </div>
         </div>
+        <StepsCard/>
         </div>
         
     )
