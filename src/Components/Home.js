@@ -1,7 +1,7 @@
-import homeimg from '../Assets/home.png'
-import fbimg from '../Assets/fb_icon.png'
-import instaimg from '../Assets/insta-icon.png'
-import twitimg from '../Assets/twit_icon.png'
+import homeimg from './Assets/home.png'
+import fbimg from './Assets/fb_icon.png'
+import instaimg from './Assets/insta-icon.png'
+import twitimg from './Assets/twit_icon.png'
 import './Home.css'
 const Home=()=>
 {

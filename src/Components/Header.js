@@ -1,5 +1,5 @@
-import logo from '../Assets/logo.png'
-import buttonicon from '../Assets/DayNight.png'
+import logo from './Assets/logo.png'
+import buttonicon from './Assets/DayNight.png'
 import './Header.css'
 const Header=()=>
 {
