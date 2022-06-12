@@ -1,10 +1,12 @@
-import  './Product.css'
-import prd1 from './Assets/product1.png'
-import prd2 from './Assets/product2.png'
-import prd3 from './Assets/product3.png'
-import prd4 from './Assets/product4.png'
-import prd5 from './Assets/product5.png'
-import prd6 from './Assets/product6.png'
+import  './Product.css';
+import React from 'react';
+
+import prd1 from './Assets/product1.png';
+import prd2 from './Assets/product2.png';
+import prd3 from './Assets/product3.png';
+import prd4 from './Assets/product4.png';
+import prd5 from './Assets/product5.png';
+import prd6 from './Assets/product6.png';
 
 const Product=()=>{
     return(
@@ -19,7 +21,7 @@ const Product=()=>{
                 </p>
 
                 <div class="product__container grid">
-                    <article class="product__card">
+                    <div class="product__card">
                         <div class="product__circle"></div>
 
                         <img src={prd1} alt="" class="product__img"/>
@@ -28,11 +30,11 @@ const Product=()=>{
                         <span class="product__price">$19.99</span>
 
                         <button class="button--flex product__button">
-                            <i class="ri-shopping-bag-line" />
+                            
                         </button>
-                    </article>
+                    </div>
 
-                    <article class="product__card">
+                    <div class="product__card">
                         <div class="product__circle"></div>
 
                         <img src={prd2} alt="" class="product__img"/>
@@ -43,9 +45,9 @@ const Product=()=>{
                         <button class="button--flex product__button">
                             <i class="ri-shopping-bag-line"></i>
                         </button>
-                    </article>
+                    </div>
 
-                    <article class="product__card">
+                    <div class="product__card">
                         <div class="product__circle"></div>
 
                         <img src={prd3} alt="" class="product__img"/>
@@ -56,9 +58,9 @@ const Product=()=>{
                         <button class="button--flex product__button">
                             <i class="ri-shopping-bag-line"></i>
                         </button>
-                    </article>
+                    </div>
 
-                    <article class="product__card">
+                    <div class="product__card">
                         <div class="product__circle"></div>
 
                         <img src={prd4} alt="" class="product__img"/>
@@ -69,9 +71,9 @@ const Product=()=>{
                         <button class="button--flex product__button">
                             <i class="ri-shopping-bag-line"></i>
                         </button>
-                    </article>
+                    </div>
 
-                    <article class="product__card">
+                    <div class="product__card">
                         <div class="product__circle"></div>
 
                         <img src={prd5} alt="" class="product__img"/>
@@ -82,9 +84,9 @@ const Product=()=>{
                         <button class="button--flex product__button">
                             <i class="ri-shopping-bag-line"></i>
                         </button>
-                    </article>
+                    </div>
 
-                    <article class="product__card">
+                    <div class="product__card">
                         <div class="product__circle"></div>
 
                         <img src={prd6} alt="" class="product__img"/>
@@ -95,7 +97,7 @@ const Product=()=>{
                         <button class="button--flex product__button">
                             <i class="ri-shopping-bag-line"></i>
                         </button>
-                    </article>
+                    </div>
                 </div>
             </div>
     )
