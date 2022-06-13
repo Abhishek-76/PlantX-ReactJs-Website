@@ -22,16 +22,15 @@ const Product=()=>{
 
                 <div class="product__container grid">
                     <div class="product__card">
-                        <div class="product__circle"></div>
-
-                        <img src={prd1} alt="" class="product__img"/>
-
-                        <h3 class="product__title">Cacti Plant</h3>
-                        <span class="product__price">$19.99</span>
-
-                        <button class="button--flex product__button">
-                            
-                        </button>
+                        <div class="product__circle">
+                            <img src={prd1} alt="" class="product__img"/>
+                        </div>
+                        <div>
+                            <h3 class="product__title">Cacti Plant</h3>
+                            <span class="product__price">$19.99</span>
+                            <button class="button--flex product__button">
+                            </button>
+                        </div>
                     </div>
 
                     <div class="product__card">

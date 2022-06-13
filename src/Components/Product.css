@@ -11,22 +11,25 @@
 .product__card{
   display: grid;
   position: relative;
+  flex-direction: row;
 }
-
+.grid{
+  display: grid;
+}
 
 .product__img{
   position: relative;
   width: 120px;
   justify-self: center;
-  margin-bottom: var(--mb-0-75);
+  margin-bottom: 0.75rem;
   transition: .3s;
 }
 
 .product__title,
 .product__price{
-  font-size: var(--small-font-size);
-  font-weight: var(--font-semi-bold);
-  color: var(--title-color);
+  font-size: .813rem;
+  font-weight: 600;
+  color:hsl(152, 4%, 15%);
 }
 
 .product__title{
@@ -37,7 +40,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  background-color: var(--first-color);
+  background-color: hsl(152, 24%, 32%);
   color: #FFF;
   padding: .25rem;
   border-radius: .35rem;
@@ -45,13 +48,13 @@
 }
 
 .product__button:hover{
-  background-color: var(--first-color-alt);
+  background-color: hsl(152, 24%, 28%);
 }
 
 .product__circle{
   width: 90px;
   height: 90px;
-  background-color: var(--first-color-lighten);
+  background-color: hsl(152, 24%, 92%);
   border-radius: 50%;
   position: absolute;
   top: 18%;
@@ -60,4 +63,41 @@
 
 .product__card:hover .product__img{
   transform: translateY(-.5rem);
+}
+
+.button{
+  display: inline-block;
+  background-color: hsl(152, 24%, 32%);
+  color: #FFF;
+  padding: 1rem 1.75rem;
+  border-radius: .5rem;
+  font-weight: 500;
+  transition: .3s;
+}
+
+.button:hover{
+  background-color: hsl(152, 24%, 28%);
+}
+
+.button__icon{
+  transition: .3s;
+}
+
+.button:hover .button__icon{
+  transform: translateX(.25rem);
+}
+
+.button--flex{
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+.button--link{
+  color:hsl(152, 24%, 32%);
+  font-weight: 500;
+}
+
+.button--link:hover .button__icon{
+  transform: translateX(.25rem);
 }
