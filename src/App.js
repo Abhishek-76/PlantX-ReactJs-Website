@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import './App.css'
 import Home from './Components/Home';
 import Product from './Components/Product';
+import Questions from './Components/Questions';
 function App() {
   return (
     <div className='container'>
@@ -18,6 +19,9 @@ function App() {
       </div>
       <div>
         <Product/>
+      </div>
+      <div>
+        <Questions/>
       </div>
       
     </div>
