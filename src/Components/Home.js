@@ -19,9 +19,9 @@ const Home=()=>
                 Create incredible plant design for your offices or apastaments. 
                 Add fresness to your new ideas.
               </p>
-              <button href="#about" class="button button--flex">
+              <a href="#about" class="button button--flex">
                 Explore <BsArrowDownRight className='button__icon'/>
-              </button>
+              </a>
             </div>
             <img src={homeimg} alt="" className="home__img"/>
 

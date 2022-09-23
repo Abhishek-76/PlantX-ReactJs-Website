@@ -42,7 +42,7 @@ const About=()=>{
               </p>
             </div>
             
-            <a href="Product" class="button--link button--flex">
+            <a href="#products" class="button--link button--flex">
               Shop Now <BsArrowDownRight className='button__icon'/>
             </a>
 
