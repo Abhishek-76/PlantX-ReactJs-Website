@@ -1,48 +1,55 @@
 import React from 'react'
 import aboutimg from '../Assets/about.png'
 import './About.css'
-import StepsCard from './StepsCard'
+import { IoMdCheckbox } from "react-icons/io";
+import { BsArrowDownRight } from "react-icons/bs";
+
 const About=()=>{
     return(
       
-      <div className='sec'>
-        <div className="about__container">
-          <div className="about__img">
-            <img src={aboutimg} alt=""/>
-          </div>
+      <section className='about section abt_container' id='about'>
+        <div className="about__container grid">
+          
+          <img src={aboutimg} className="about__img" alt="AboutIMG"/>
           
           <div className="about__data">
-            <div className="about__title">
-              <h2>Who we really are & <br/> why choose us</h2>
-            </div>
+            <h2 className="section__title about__title">
+              Who we really are & <br/> why choose us
+            </h2>
             
-            <div className="about__description">
-            <p >
+            <p className="about__description">
               We have over 4000+ unbiased reviews and our customers 
               trust our plant process and delivery service every time
             </p>
-            </div>
+            
             
             <div className="about__details">
-              <div className="about__details-description">
-              <ul>
-                <li>We always deliver on time.</li>
-                <li>We give you guides to protect and care for your plants.</li>
-                <li>We always come over for a check-up after sale.</li>
-                <li>100% money back guaranteed.</li>
-              </ul>
-              </div>
-              <div >
-              <a href="Product" class="button--link button--flex">
-                Shop Now ↘
-              </a>
+              <p className="about__details-description">
+                <IoMdCheckbox className='about__details-icon'/>
+                We always deliver on time.
+              </p>
+              <p className="about__details-description">
+                <IoMdCheckbox className='about__details-icon'/>
+                We give you guides to protect and care for your plants.
+              </p>
+              <p className="about__details-description">
+                <IoMdCheckbox className='about__details-icon'/>
+                We always come over for a check-up after sale.
+              </p>
+              <p className="about__details-description">
+                <IoMdCheckbox className='about__details-icon'/>
+                100% money back guaranteed.
+              </p>
             </div>
-              
-            </div>
-          </div>
-        </div>
-        <StepsCard/>
-        </div>
+            
+            <a href="Product" class="button--link button--flex">
+              Shop Now <BsArrowDownRight className='button__icon'/>
+            </a>
+
+      </div>
+    </div>
+    
+    </section>
         
     )
 }

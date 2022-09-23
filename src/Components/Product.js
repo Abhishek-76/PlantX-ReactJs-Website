@@ -7,10 +7,10 @@ import prd3 from './Assets/product3.png';
 import prd4 from './Assets/product4.png';
 import prd5 from './Assets/product5.png';
 import prd6 from './Assets/product6.png';
-
+import { BiShoppingBag } from "react-icons/bi";
 const Product=()=>{
     return(
-        <div class="product section">
+        <section class="product section container" id='products'>
                 <h2 class="section__title-center">
                     Check out our <br/> products
                 </h2>
@@ -21,19 +21,19 @@ const Product=()=>{
                 </p>
 
                 <div class="product__container grid">
-                    <div class="product__card">
+                    <article class="product__card">
                         <div class="product__circle"></div>
-                            <img src={prd1} alt="" class="product__img"/>
+                        <img src={prd1} alt="" class="product__img"/>
                         
-                        <div>
-                            <h3 class="product__title">Cacti Plant</h3>
-                            <span class="product__price">$19.99</span>
-                            <button class="button--flex product__button">
-                            </button>
-                        </div>
-                    </div>
+                        <h3 class="product__title">Cacti Plant</h3>
+                        <span class="product__price">$19.99</span>
+                        <button class="button--flex product__button">
+                        <BiShoppingBag/>
+                        </button>
+                        
+                    </article>
 
-                    <div class="product__card">
+                    <article class="product__card">
                         <div class="product__circle"></div>
 
                         <img src={prd2} alt="" class="product__img"/>
@@ -42,11 +42,11 @@ const Product=()=>{
                         <span class="product__price">$11.99</span>
 
                         <button class="button--flex product__button">
-                            <i class="ri-shopping-bag-line"></i>
+                            <BiShoppingBag/>
                         </button>
-                    </div>
+                    </article>
 
-                    <div class="product__card">
+                    <article class="product__card">
                         <div class="product__circle"></div>
 
                         <img src={prd3} alt="" class="product__img"/>
@@ -55,11 +55,11 @@ const Product=()=>{
                         <span class="product__price">$7.99</span>
 
                         <button class="button--flex product__button">
-                            <i class="ri-shopping-bag-line"></i>
+                            <BiShoppingBag/>
                         </button>
-                    </div>
+                    </article>
 
-                    <div class="product__card">
+                    <article class="product__card">
                         <div class="product__circle"></div>
 
                         <img src={prd4} alt="" class="product__img"/>
@@ -68,11 +68,11 @@ const Product=()=>{
                         <span class="product__price">$5.99</span>
 
                         <button class="button--flex product__button">
-                            <i class="ri-shopping-bag-line"></i>
+                            <BiShoppingBag/>
                         </button>
-                    </div>
+                    </article>
 
-                    <div class="product__card">
+                    <article class="product__card">
                         <div class="product__circle"></div>
 
                         <img src={prd5} alt="" class="product__img"/>
@@ -81,11 +81,11 @@ const Product=()=>{
                         <span class="product__price">$10.99</span>
 
                         <button class="button--flex product__button">
-                            <i class="ri-shopping-bag-line"></i>
+                            <BiShoppingBag/>   
                         </button>
-                    </div>
+                    </article>
 
-                    <div class="product__card">
+                    <article class="product__card">
                         <div class="product__circle"></div>
 
                         <img src={prd6} alt="" class="product__img"/>
@@ -94,11 +94,11 @@ const Product=()=>{
                         <span class="product__price">$8.99</span>
 
                         <button class="button--flex product__button">
-                            <i class="ri-shopping-bag-line"></i>
+                            <BiShoppingBag/>
                         </button>
-                    </div>
+                    </article>
                 </div>
-            </div>
+            </section>
     )
 }
 export default Product;

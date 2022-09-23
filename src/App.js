@@ -1,10 +1,13 @@
 import React from 'react';
-//import About from './Components/About/About';
+import About from './Components/About/About';
 import Header from './Components/Header/Header';
 import './App.css'
 import Home from './Components/Home';
-//import Product from './Components/Product';
-//import Questions from './Components/Questions';
+import StepsCard from './Components/About/StepsCard';
+import Product from './Components/Product';
+import Questions from './Components/Questions';
+import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 function App() {
   return (
     <>
@@ -14,7 +17,22 @@ function App() {
       <div className='div-container'>
         <Home/>
       </div>
-      
+      <div className='div-container'>
+        <About/>
+        <StepsCard/>
+      </div>
+      <div className='div-container'>
+        <Product/>
+      </div>
+      <div className='div-container'>
+        <Questions/>
+      </div>
+      <div className='div-container'>
+        <Contact/>
+      </div>
+      <div className='div-container'>
+        <Footer/>
+      </div>
     </>
         
   );
@@ -22,14 +40,7 @@ function App() {
 
 export default App;
 
-//      <div className='div-container'>
-//        <About/>
-//      </div>
-  //    <div className='div-container'>
-  //      <Product/>
-      //</div>
-    //  <div className='div-container'>
-        //<Questions/>
-      //</div>
-      //<i class="fa-brands fa-facebook-f"></i>
-      //<i class="fa-solid fa-moon"></i>
+
+      
+    
+      

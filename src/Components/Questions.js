@@ -1,6 +1,6 @@
 import React from "react";
 import'./Questions.css';
-import { Icon } from '@iconify/react';
+import { RiAddFill } from "react-icons/ri";
 
 const Questions=()=>
 {
@@ -14,7 +14,7 @@ const Questions=()=>
                     <div class="questions__group">
                         <div class="questions__item">
                             <header class="questions__header">
-                                <Icon icon="ri:add-fill" className="questions__icon"/>
+                                <RiAddFill className="questions__icon"/>
                                 
                                 <h3 class="questions__item-title">
                                     My flowers are falling off or dying?
@@ -31,7 +31,7 @@ const Questions=()=>
 
                         <div class="questions__item">
                             <header class="questions__header">
-                            <Icon icon="ri:add-fill" className="questions__icon"/>
+                            <RiAddFill className="questions__icon"/>
                                 <h3 class="questions__item-title">
                                     What causes leaves to become pale?
                                 </h3>
@@ -47,7 +47,7 @@ const Questions=()=>
 
                         <div class="questions__item">
                             <header class="questions__header">
-                                <Icon icon="ri:add-fill" className="questions__icon"/>
+                                <RiAddFill className="questions__icon"/>
                                 <h3 class="questions__item-title">
                                     What causes brown crispy leaves?
                                 </h3>
@@ -65,7 +65,7 @@ const Questions=()=>
                     <div class="questions__group">
                         <div class="questions__item">
                             <header class="questions__header">
-                                <Icon icon="ri:add-fill" className="questions__icon"/>
+                                <RiAddFill className="questions__icon"/>
                                 <h3 class="questions__item-title">
                                     How do i choose a plant?
                                 </h3>
@@ -81,7 +81,7 @@ const Questions=()=>
 
                         <div class="questions__item">
                             <header class="questions__header">
-                                <Icon icon="ri:add-fill" className="questions__icon"/>
+                                <RiAddFill className="questions__icon"/>
                                 <h3 class="questions__item-title">
                                     How do I change the pots?
                                 </h3>
@@ -97,7 +97,7 @@ const Questions=()=>
 
                         <div class="questions__item">
                             <header class="questions__header">
-                                <Icon icon="ri:add-fill" className="questions__icon"/>
+                                <RiAddFill className="questions__icon"/>
                                 <h3 class="questions__item-title">
                                     Why are gnats flying around my plant?
                                 </h3>

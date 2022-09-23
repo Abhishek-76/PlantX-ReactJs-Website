@@ -1,50 +1,49 @@
 import homeimg from './Assets/home.png'
-import fbimg from './Assets/fb_icon.png'
-import instaimg from './Assets/insta-icon.png'
-import twitimg from './Assets/twit_icon.png'
+import { CgFacebook } from "react-icons/cg";
+import { FaInstagram } from "react-icons/fa";
+import { IoLogoTwitter } from "react-icons/io";
+import { BsArrowDownRight } from "react-icons/bs";
 import './Home.css'
 const Home=()=>
 {
     return(
-      <div className='home'>
-        <div className="home__container ">
-            <div className="home__data">
-              <h1 className="home__title">
-                Plants will make  your life better
+      <section className='home' id='home'>
+        <div className="home__container home2_container grid">
+            
+
+            <div class="home__data">
+              <h1 class="home__title">
+                Plants will make <br/> your life better
               </h1>
-              <p className="home__description">
+              <p class="home__description">
                 Create incredible plant design for your offices or apastaments. 
                 Add fresness to your new ideas.
-               </p>
-              <a href="#about" className="button button--flex">
-                Explore ↘
-              </a>
-          </div>
-          <img src={homeimg} alt="" className="home__img"/>
+              </p>
+              <button href="#about" class="button button--flex">
+                Explore <BsArrowDownRight className='button__icon'/>
+              </button>
+            </div>
+            <img src={homeimg} alt="" className="home__img"/>
 
               <div className="home__social">
                 <span className="home__social-follow">Follow Us</span>
-                  <div className="home__social-links">
-                    <div className="home__social-link">
-                      <a href="https://www.facebook.com/" >
-                      <img src={fbimg} alt=''/>
-                    </a>
-                    </div>
-                    <div className="home__social-link">
-                      <a href="https://www.instagram.com/"  >
-                      <img src={instaimg} alt=''/>
-                    </a>
-                    </div>
-                    <div className="home__social-link">
-                      <a href="https://twitter.com/"  >
-                      <img src={twitimg} alt=''/>
-                    </a>
-                    </div>
+                  
+                    <div className="home__social-links">
+                      <a href="https://www.facebook.com/" className="home__social-link" >
+                        <CgFacebook/>
+                      </a>
                     
-                  </div>
-                </div>
+                      <a href="https://www.instagram.com/" className="home__social-link" >
+                        <FaInstagram/>
+                      </a>
+                    
+                      <a href="https://twitter.com/" className="home__social-link" >
+                        <IoLogoTwitter/>
+                      </a>
+                    </div>
               </div>
-      </div>
+          </div>
+      </section>
     )
 }
 export default Home;

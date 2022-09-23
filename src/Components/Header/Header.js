@@ -9,7 +9,7 @@ const Header=()=>
         
         <nav className='nav nav_container'>   
           <a href="#logo" className="nav__logo">
-            <TbLeaf className=" nav__logo-icon"/>Plantx
+            <TbLeaf className=" nav__logo-icon"/>PlantX
           </a>  
           
           <div className="nav__menu" >

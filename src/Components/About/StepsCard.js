@@ -1,14 +1,14 @@
 import './StepsCard.css'
 const StepsCard=()=>{
     return(
-        <div class="steps section container">
+        <section class="steps section container">
             
                 <div class="steps__bg">
                     <h2 class="section__title-center steps__title">
                         Steps to start your <br/> plants off right
                     </h2>
 
-                    <div class="steps__container">
+                    <div class="steps__container grid">
                         <div class="steps__card">
                             <div class="steps__card-number">01</div>
                             <h3 class="steps__card-title">Choose Plant</h3>
@@ -35,7 +35,7 @@ const StepsCard=()=>{
                     </div>
                 </div>
             
-        </div>
+        </section>
     )
 
 }

@@ -1,3 +1,17 @@
+.section{
+  padding: 8rem 0 1rem;
+}
+.section__title-center{
+  font-size: 24px;
+  margin-bottom: 2rem;
+  line-height: 140%;
+  text-align: center;
+}
+.container{
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .steps__bg{
     background-color: hsl(152, 24%, 32%);
     padding: 3rem 2rem 2rem;
@@ -5,21 +19,15 @@
   }
   
   .steps__container{
-    display: flex;
     gap: 2rem;
     padding-top: 1rem;
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
+  
   }
   
   
   .steps__title{
     color: #FFF;
-  }
-  .section__title-center{
-    font-size: 24px;
-    margin-bottom: 2rem;
-    line-height: 140%;
-    text-align: center;
   }
   
   .steps__card{
