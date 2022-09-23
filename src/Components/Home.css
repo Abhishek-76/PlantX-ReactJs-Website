@@ -1,20 +1,16 @@
 .home{
-    
-    padding: 3.5rem 0 2rem;
-  }
-  
-  
-  .home__container{
-    display:flex ;
-    position: relative;
-    row-gap: 2rem;
-  }
-   
-  .home__img{
-    
-    width: 400px;
-    justify-self: left;
-  }
+  padding: 3.5rem 0 2rem;
+}
+
+.home__container{
+  position: relative;
+  row-gap: 2rem;
+}
+
+.home__img{
+  width: 200px;
+  justify-self: center;
+}
   
   .home__title{
     
@@ -25,7 +21,6 @@
   
   .home__description{
     margin-bottom:  2.5rem;
-    font-size: 2rem;
   }
   
   .home__social{
@@ -33,7 +28,7 @@
     top: 2rem;
     right: -1rem;
     display: grid;
-    justify-items: right;
+    justify-items: center;
     row-gap: 3.5rem;
   }
   

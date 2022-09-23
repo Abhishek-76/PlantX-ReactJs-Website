@@ -32,12 +32,12 @@
   flex-direction: column;
   
 }
-ul {
+abt_ul {
   list-style: none;
   
 }
 
-ul li:before {
+abt_ul li:before {
   content: '✅';
   
 }
