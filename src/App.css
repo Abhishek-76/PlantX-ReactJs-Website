@@ -10,9 +10,17 @@ textarea{
     font-size: 1rem;
     }
 h1,h2,h3{
-        color: hsl(152, 4%, 15%);
-        font-weight: 600;
+    color: hsl(152, 4%, 15%);
+    font-weight: 600;
 }
+ul{
+    list-style: none;
+  }
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
 .container{
     display: flex;
     flex-direction: column;
@@ -24,5 +32,28 @@ h1,h2,h3{
     padding-right: 30px;
     padding-bottom: 10px;
     padding-left: 30px;
+  }
+.scrollup{
+    right: 3rem;
+}
+.scrollup__icon{
+    font-size: 1rem;
+    color: #FFF;
+}
+.scrollup{
+    position: fixed;
+    background-color:hsl(152, 24%, 32%);
+    right: 1rem;
+    bottom: -30%;
+    display: inline-flex;
+    padding: .5rem;
+    border-radius: .25rem;
+    z-index: 10;
+    opacity: .8;
+    transition: .4s;
+  }
+  .scrollup:hover{
+    background-color: hsl(152, 24%, 28%);
+    opacity: 1;
   }
   

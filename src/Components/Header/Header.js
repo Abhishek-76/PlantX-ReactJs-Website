@@ -18,7 +18,7 @@ const Header=()=>
                 <a href="#home" className="nav__link active-link">Home</a>
               </li>
               <li className="nav__item">
-                <a href="#about" className="nav__link">About</a>
+                <a href="#about" className="nav__link ">About</a>
               </li>
               <li className="nav__item">
                 <a href="#products" className="nav__link">Products</a>

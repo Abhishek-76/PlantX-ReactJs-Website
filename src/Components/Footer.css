@@ -1,7 +1,7 @@
 .footer__container{
     row-gap: 3rem;
     grid-template-columns: 1fr .5fr .5fr .5fr;
-    column-gap: 5rem;
+    column-gap: 3rem;
   }
   
   .footer__logo{

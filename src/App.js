@@ -8,31 +8,35 @@ import Product from './Components/Product';
 import Questions from './Components/Questions';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
+import { HiArrowUp } from "react-icons/hi";
 function App() {
   return (
     <>
-      <div className='div-container'>
+      <div >
         <Header/>
       </div>
-      <div className='div-container'>
+      <div >
         <Home/>
       </div>
-      <div className='div-container'>
+      <div >
         <About/>
         <StepsCard/>
       </div>
-      <div className='div-container'>
+      <div >
         <Product/>
       </div>
-      <div className='div-container'>
+      <div >
         <Questions/>
       </div>
-      <div className='div-container'>
+      <div >
         <Contact/>
       </div>
       <div className='div-container'>
         <Footer/>
       </div>
+      <a href="#header" className="scrollup" id="scroll-up"> 
+        <HiArrowUp className='.scrollup__icon'/>
+      </a>
     </>
         
   );
