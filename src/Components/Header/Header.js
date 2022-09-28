@@ -1,18 +1,23 @@
 import { useEffect,useState } from "react";
-import { MdDarkMode } from "react-icons/md";
+
 import { TbLeaf } from "react-icons/tb";
+import { MdDarkMode } from "react-icons/md";
+//import { BiSun } from "react-icons/bi";
 
 import './Header.css'
 const Header=()=>
 {   
-    const [theme, setTheme] = useState("light-theme")
-    const toggleTheme =()=>{
+    const [theme, setTheme] = useState("light-theme");   
+    const toggleTheme =(e)=>{
+      e.preventDefault();
       theme==="dark-theme" ? setTheme('light-theme') :  setTheme('dark-theme');
-
     };
+    
     useEffect(()=>{
       document.body.className = theme;
     },[theme]);
+
+    
 
     return (
       <header className='header'>
@@ -43,8 +48,10 @@ const Header=()=>
           </div>
          
           
-          <a href="darkMode" className="nav__btns" onClick={()=>toggleTheme}>
-            <MdDarkMode className='change-theme' id="theme-button"/> 
+          <a href="darkMode" className="nav__btns" onClick={toggleTheme}>
+            
+            <MdDarkMode className='change-theme' id="theme-button" />         
+            
           </a>
                                 
              

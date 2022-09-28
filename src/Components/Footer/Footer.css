@@ -54,6 +54,7 @@
   
   .footer__data{
     display: grid;
+    padding: 0;
     row-gap: .75rem;
   }
   

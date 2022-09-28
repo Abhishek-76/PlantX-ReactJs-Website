@@ -12,8 +12,7 @@ import { HiArrowUp } from "react-icons/hi";
 
 function App() {
   return (
-    <>
-    
+    <>    
       <div >
         <Header/>
       </div>
