@@ -2,12 +2,12 @@ import React from 'react';
 import About from './Components/About/About';
 import Header from './Components/Header/Header';
 import './App.css'
-import Home from './Components/Home';
+import Home from './Components/Home/Home';
 import StepsCard from './Components/About/StepsCard';
-import Product from './Components/Product';
-import Questions from './Components/Questions';
-import Contact from './Components/Contact';
-import Footer from './Components/Footer';
+import Product from './Components/Product/Product';
+import Questions from './Components/Question/Questions';
+import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 import { HiArrowUp } from "react-icons/hi";
 function App() {
   return (

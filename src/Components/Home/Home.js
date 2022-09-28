@@ -1,4 +1,4 @@
-import homeimg from './Assets/home.png'
+import homeimg from '../Assets/home.png'
 import { CgFacebook } from "react-icons/cg";
 import { FaInstagram } from "react-icons/fa";
 import { IoLogoTwitter } from "react-icons/io";

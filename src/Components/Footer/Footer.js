@@ -5,10 +5,10 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 import { CgFacebook } from "react-icons/cg";
 import { FaInstagram } from "react-icons/fa";
 import { IoLogoTwitter } from "react-icons/io";
-import card1 from './Assets/card1.png';
-import card2 from './Assets/card2.png';
-import card3 from './Assets/card3.png';
-import card4 from './Assets/card4.png'
+import card1 from '../Assets/card1.png';
+import card2 from '../Assets/card2.png';
+import card3 from '../Assets/card3.png';
+import card4 from '../Assets/card4.png'
 
 const Footer=()=>
 {
