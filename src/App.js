@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 import About from './Components/About/About';
 import Header from './Components/Header/Header';
 import './App.css'
@@ -9,9 +9,11 @@ import Questions from './Components/Question/Questions';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import { HiArrowUp } from "react-icons/hi";
+
 function App() {
   return (
     <>
+    
       <div >
         <Header/>
       </div>
