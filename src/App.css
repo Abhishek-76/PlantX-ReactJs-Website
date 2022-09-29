@@ -252,6 +252,10 @@ a{
 h1,h2,h3{
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
+  margin: 0;
+}
+p{
+  margin: 0;
 }
 ul{
     list-style: none;

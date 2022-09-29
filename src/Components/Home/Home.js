@@ -1,18 +1,19 @@
+import React from 'react'
 import homeimg from '../Assets/home.png'
 import { CgFacebook } from "react-icons/cg";
 import { FaInstagram } from "react-icons/fa";
 import { IoLogoTwitter } from "react-icons/io";
 import { BsArrowDownRight } from "react-icons/bs";
 import './Home.css'
-import { Fade } from "react-awesome-reveal";
+import Fade from 'react-reveal/Fade';
 const Home=()=>
 {
     return(
-      <Fade>
+      
       <section className='home' id='home'>
         <div className="home__container home2_container grid">
             
-
+          <Fade top duration='2500'>
             <div class="home__data">
               <h1 class="home__title">
                 Plants will make <br/> your life better
@@ -25,8 +26,11 @@ const Home=()=>
                 Explore <BsArrowDownRight className='button__icon'/>
               </a>
             </div>
-            <img src={homeimg} alt="" className="home__img"/>
-
+            </Fade>
+            <Fade top delay='500' duration='2500'>
+              <img src={homeimg} alt="" className="home__img"/>
+            </Fade>
+            <Fade top delay='600' duration='2500'>
               <div className="home__social">
                 <span className="home__social-follow">Follow Us</span>
                   
@@ -44,9 +48,10 @@ const Home=()=>
                       </a>
                     </div>
               </div>
+              </Fade>
           </div>
       </section>
-      </Fade>
+      
     )
 }
 export default Home;

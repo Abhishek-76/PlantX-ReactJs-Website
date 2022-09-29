@@ -20,7 +20,7 @@
 }
 
 .about__description{
-  margin-bottom: 2rem;
+  margin-bottom: var(--mb-2);
 }
 
 .about__details{
