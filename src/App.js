@@ -1,7 +1,7 @@
 import React  from 'react';
 import About from './Components/About/About';
 import Header from './Components/Header/Header';
-import './App.css'
+import './App.css';
 import Home from './Components/Home/Home';
 import StepsCard from './Components/About/StepsCard';
 import Product from './Components/Product/Product';
@@ -32,11 +32,11 @@ function App() {
       <div >
         <Contact/>
       </div>
-      <div className='div-container'>
+      <div>
         <Footer/>
       </div>
       <a href="#header" className="scrollup" id="scroll-up"> 
-        <HiArrowUp className='.scrollup__icon'/>
+        <HiArrowUp className='scrollup__icon'/>
       </a>
     </>
         

@@ -4,9 +4,11 @@ import { FaInstagram } from "react-icons/fa";
 import { IoLogoTwitter } from "react-icons/io";
 import { BsArrowDownRight } from "react-icons/bs";
 import './Home.css'
+import { Fade } from "react-awesome-reveal";
 const Home=()=>
 {
     return(
+      <Fade>
       <section className='home' id='home'>
         <div className="home__container home2_container grid">
             
@@ -44,6 +46,7 @@ const Home=()=>
               </div>
           </div>
       </section>
+      </Fade>
     )
 }
 export default Home;

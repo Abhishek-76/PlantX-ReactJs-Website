@@ -3,11 +3,11 @@ import aboutimg from '../Assets/about.png'
 import './About.css'
 import { IoMdCheckbox } from "react-icons/io";
 import { BsArrowDownRight } from "react-icons/bs";
-
+import { Fade } from "react-awesome-reveal";
  
 const About=()=>{
     return(
-      
+      <Fade>
       <section className='about section abt_container' id='about'>
         <div className="about__container grid">
 
@@ -51,7 +51,7 @@ const About=()=>{
     </div>
     
     </section>
-        
+    </Fade>  
     )
 }
 export default About;
