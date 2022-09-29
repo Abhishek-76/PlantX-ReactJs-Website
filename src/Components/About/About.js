@@ -10,10 +10,11 @@ const About=()=>{
       
       <section className='about section abt_container' id='about'>
         <div className="about__container grid">
-          <Fade left duration= '2500'>
-          <img src={aboutimg} className="about__img" alt="AboutIMG"/>
+          <Fade left duration={2500}>
+            <img src={aboutimg} className="about__img" alt="AboutIMG"/>
           </Fade>
-          <Fade right duration= '2500'>
+
+          <Fade right duration={2500} >
           <div className="about__data">
             <h2 className="section__title about__title">
               Who we really are & <br/> why choose us
@@ -44,7 +45,7 @@ const About=()=>{
               </p>
             </div>
             
-            <a href="#products" class="button--link button--flex">
+            <a href="#products" className="button--link button--flex">
               Shop Now <BsArrowDownRight className='button__icon'/>
             </a>
 

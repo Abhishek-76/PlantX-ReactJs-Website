@@ -8,13 +8,17 @@ import { IoLogoTwitter } from "react-icons/io";
 import card1 from '../Assets/card1.png';
 import card2 from '../Assets/card2.png';
 import card3 from '../Assets/card3.png';
-import card4 from '../Assets/card4.png'
+import card4 from '../Assets/card4.png';
+import Fade from 'react-reveal/Fade';
 
 const Footer=()=>
 {
     return(
+        
         <footer className="footer section">
+            
             <div className="footer__container container grid">
+            <Fade top  cascade duration={2500}>
                 <div className="footer__content">
                     <a href="#j" className="footer__logo">
                         <TbLeaf className="footer__logo-icon"/>PlantX
@@ -65,15 +69,18 @@ const Footer=()=>
                     We accept all credit cards
                 </h3>
                 <div className="footer__cards">
-                    <img src={card1} alt="" class="footer__card"/>
-                    <img src={card2} alt="" class="footer__card"/>
-                    <img src={card3} alt="" class="footer__card"/>
-                    <img src={card4} alt="" class="footer__card"/>
+                    <img src={card1} alt="" className="footer__card"/>
+                    <img src={card2} alt="" className="footer__card"/>
+                    <img src={card3} alt="" className="footer__card"/>
+                    <img src={card4} alt="" className="footer__card"/>
                 </div>
                 </div>
+                </Fade>
             </div>
-            <p class="footer__copy">&#169; Abhishek-76. All rigths reserved</p>
+            <p className="footer__copy">&#169; Abhishek-76. All rigths reserved</p>
+            
         </footer>
+        
         )
 }
 

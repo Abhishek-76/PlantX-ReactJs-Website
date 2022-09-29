@@ -1,15 +1,16 @@
-
 import React from "react";
 import'./Contact.css';
 import { HiOutlinePhone } from "react-icons/hi";
 import { FiMail } from "react-icons/fi";
 import { RiArrowRightUpLine } from "react-icons/ri";
-
+import Fade from 'react-reveal/Fade';
 const Contact=()=>
 {
     return(
         <section className="contact section container" id="contact">
+            
             <div className="contact_container grid">
+            <Fade left duration={2500}>
                 <div className="contact__box">
                     <h2 className="section__title">
                         Reach out to us today <br/> via any of the given <br/> information
@@ -35,27 +36,29 @@ const Contact=()=>
                         </div>
                     </div>
                 </div>
-            
+                </Fade>
             <form action="" className="contact__form">
+            <Fade right duration={2500}>
                 <div className="contact__inputs">
                     <div className="contact__content">
                         <input type="email" placeholder=" " className="contact__input"/>
-                        <label for="" className="contact__label">Email</label>
+                        <label  className="contact__label">Email</label>
                     </div>
                     <div className="contact__content">
                         <input type="text" placeholder=" " className="contact__input"/>
-                        <label for="" className="contact__label">Subject</label>
+                        <label  className="contact__label">Subject</label>
                     </div>
 
                     <div className="contact__content contact__area">
                         <textarea name="message" placeholder=" " className="contact__input"></textarea>                              
-                        <label for="" className="contact__label">Message</label>
+                        <label  className="contact__label">Message</label>
                     </div>
                 </div>
                 <button className="button button--flex">
                     Send Message
                     <RiArrowRightUpLine className="button__icon"/>
                 </button>
+            </Fade>
             </form>
             </div>
         </section>

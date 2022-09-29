@@ -13,24 +13,24 @@ const Home=()=>
       <section className='home' id='home'>
         <div className="home__container home2_container grid">
             
-          <Fade top duration='2500'>
-            <div class="home__data">
-              <h1 class="home__title">
+        <Fade top duration={2000}>
+            <div className="home__data">
+              <h1 className="home__title">
                 Plants will make <br/> your life better
               </h1>
-              <p class="home__description">
+              <p className="home__description">
                 Create incredible plant design for your offices or apastaments. 
                 Add fresness to your new ideas.
               </p>
-              <a href="#about" class="button button--flex">
+              <a href="#about" className="button button--flex">
                 Explore <BsArrowDownRight className='button__icon'/>
               </a>
             </div>
             </Fade>
-            <Fade top delay='500' duration='2500'>
+            <Fade top duration={2500}>
               <img src={homeimg} alt="" className="home__img"/>
             </Fade>
-            <Fade top delay='600' duration='2500'>
+            <Fade top duration={2200}>
               <div className="home__social">
                 <span className="home__social-follow">Follow Us</span>
                   
