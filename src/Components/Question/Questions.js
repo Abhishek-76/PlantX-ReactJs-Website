@@ -2,9 +2,12 @@ import React from "react";
 import'./Questions.css';
 import { RiAddFill } from "react-icons/ri";
 import Fade from 'react-reveal/Fade';
+
+
 const Questions=()=>
-{
+{   
     return(
+    
     <section className="questions section" id="faqs">
                 <h2 className="section__title-center questions__title container">
                     Some common questions <br/> were often asked
@@ -12,16 +15,17 @@ const Questions=()=>
 
                 <div className="questions__container container grid">
                 <Fade top cascade duration={2500}>
+                
                     <div className="questions__group">
                     
                         <div className="questions__item">
-                            <header className="questions__header">
-                                <RiAddFill className="questions__icon"/>
+                            <div className="questions__header">
+                                <RiAddFill className="questions__icon" />
                                 
                                 <h3 className="questions__item-title">
                                     My flowers are falling off or dying?
                                 </h3>
-                            </header>
+                            </div>
 
                             <div className="questions__content">
                                 <p className="questions__description">
@@ -32,12 +36,12 @@ const Questions=()=>
                         </div>
 
                         <div className="questions__item">
-                            <header className="questions__header">
+                            <div className="questions__header">
                             <RiAddFill className="questions__icon"/>
                                 <h3 className="questions__item-title">
                                     What causes leaves to become pale?
                                 </h3>
-                            </header>
+                            </div>
 
                             <div className="questions__content">
                                 <p className="questions__description">
@@ -48,12 +52,12 @@ const Questions=()=>
                         </div>
 
                         <div className="questions__item">
-                            <header className="questions__header">
+                            <div className="questions__header">
                                 <RiAddFill className="questions__icon"/>
                                 <h3 className="questions__item-title">
                                     What causes brown crispy leaves?
                                 </h3>
-                            </header>
+                            </div>
 
                             <div className="questions__content">
                                 <p className="questions__description">
@@ -67,12 +71,12 @@ const Questions=()=>
                     <Fade top cascade duration={2500}>
                     <div className="questions__group">
                         <div className="questions__item">
-                            <header className="questions__header">
+                            <div className="questions__header">
                                 <RiAddFill className="questions__icon"/>
                                 <h3 className="questions__item-title">
                                     How do i choose a plant?
                                 </h3>
-                            </header>
+                            </div>
 
                             <div className="questions__content">
                                 <p className="questions__description">
@@ -83,12 +87,12 @@ const Questions=()=>
                         </div>
 
                         <div className="questions__item">
-                            <header className="questions__header">
+                            <div className="questions__header">
                                 <RiAddFill className="questions__icon"/>
                                 <h3 className="questions__item-title">
                                     How do I change the pots?
                                 </h3>
-                            </header>
+                            </div>
 
                             <div className="questions__content">
                                 <p className="questions__description">
@@ -99,12 +103,12 @@ const Questions=()=>
                         </div>
 
                         <div className="questions__item">
-                            <header className="questions__header">
+                            <div className="questions__header">
                                 <RiAddFill className="questions__icon"/>
                                 <h3 className="questions__item-title">
                                     Why are gnats flying around my plant?
                                 </h3>
-                            </header>
+                            </div>
 
                             <div className="questions__content">
                                 <p className="questions__description">
@@ -117,6 +121,7 @@ const Questions=()=>
                     </Fade>
                 </div>
             </section>
+            
 )
 }
 export default Questions;

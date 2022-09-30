@@ -105,6 +105,21 @@
   .questions__container{
     align-items: flex-start;
   }
+  .questions{
+    background-color:  var(--first-color-lighten);
+  }
+  .questions__title{
+    text-align: center;
+  }
+  .section__title,
+  .section__title-center{
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+  line-height: 140%;
+}
+.section__title-center{
+  text-align: center;
+}
 
   .footer__container{
     column-gap: 3rem;

@@ -14,9 +14,7 @@
 .questions{
     background-color:  var(--first-color-lighten);
   }
-  .questions__title{
-    text-align: initial;
-  }
+  
   
   .questions__container{
     gap: 1.5rem;
@@ -25,7 +23,7 @@
   
   .questions__group{
     display: grid;
-    row-gap: 2rem;
+    row-gap: 2rem;;
   }
   
   .questions__item{
@@ -40,7 +38,7 @@
   
   .questions__icon{
     font-size: 1.25rem;
-    color:var(--title-color);
+    color: var(--title-color);
   }
   
   .questions__description{
