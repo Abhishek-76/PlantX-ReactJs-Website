@@ -103,7 +103,7 @@
   }
 
   .questions__container{
-    align-items: flex-start;
+    align-items: flex;
   }
   .questions{
     background-color:  var(--first-color-lighten);
@@ -299,5 +299,6 @@ button{
     margin-left: 154px;
     margin-right: 154px;
 }
+
 
   

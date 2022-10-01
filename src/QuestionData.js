@@ -17,24 +17,7 @@ const question = [
       info:
         "Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant."
     },
-    {
-      id: 4,
-      title: " How do I change the pots?",
-      info:
-        "Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant."
-    },
-    {
-      id: 5,
-      title: "Why are gnats flying around my plant?",
-      info:
-        "Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant."
-    },
-    {
-      id: 6,
-      title: "Why are gnats flying around my plant?",
-      info:
-        "Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant."
-    }
+    
   ];
   
   export default question;

@@ -10,11 +10,14 @@ import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import { HiArrowUp } from "react-icons/hi";
 import data from './QuestionData'
+import data1 from './QuestionData2'
+import Questions from './Components/Question/Questions';
 
 function App() {
 
   const [questions, setQuestions] = useState(data);
-
+  const [questions1, setQuestions1] = useState(data1);
+  
   return (
     <>    
       <div >
@@ -35,10 +38,23 @@ function App() {
         <h2 className="section__title-center questions__title container">
             Some common questions <br/> were often asked
         </h2>
-        {questions.map((question) => (
-          <SingleQuestion key={question.id} {...question}/>
-        ))}
+        <div className="questions__container container grid">
+          <div className="questions__group">
+          {questions.map((question) => (
+              <SingleQuestion key={question.id} {...question}/>
+          ))}
+        
+          </div>
+          <div className="questions__group">
+          {questions1.map((question2) => (
+              <SingleQuestion key={question2.id} {...question2}/>
+          ))}
+        </div>
+        </div>
       </section>
+      
+      
+      <Questions/>
       </div>
       <div >
         <Contact/>

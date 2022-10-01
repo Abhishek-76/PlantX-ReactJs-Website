@@ -2,12 +2,10 @@ import React from "react";
 import'./Questions.css';
 import { RiAddFill } from "react-icons/ri";
 import Fade from 'react-reveal/Fade';
-
-
 const Questions=()=>
-{   
-    return(
+{
     
+return(
     <section className="questions section" id="faqs">
                 <h2 className="section__title-center questions__title container">
                     Some common questions <br/> were often asked
@@ -15,7 +13,6 @@ const Questions=()=>
 
                 <div className="questions__container container grid">
                 <Fade top cascade duration={2500}>
-                
                     <div className="questions__group">
                     
                         <div className="questions__item">
@@ -121,7 +118,6 @@ const Questions=()=>
                     </Fade>
                 </div>
             </section>
-            
 )
 }
 export default Questions;
