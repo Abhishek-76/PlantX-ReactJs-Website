@@ -8,24 +8,24 @@
   line-height: 140%;
 }
 
-
 .section__title-center{
   text-align: center;
 }
 .questions{
     background-color:  var(--first-color-lighten);
   }
-  
+  .questions__title{
+    text-align: initial;
+  }
   
   .questions__container{
     gap: 1.5rem;
     padding: 1.5rem 0;
-    justify-content: center;
   }
   
   .questions__group{
     display: grid;
-    row-gap: 2rem;;
+    row-gap: 2rem;
   }
   
   .questions__item{
@@ -40,7 +40,7 @@
   
   .questions__icon{
     font-size: 1.25rem;
-    color: var(--title-color);
+    color:var(--title-color);
   }
   
   .questions__description{
