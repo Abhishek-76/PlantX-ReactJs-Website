@@ -11,7 +11,7 @@ const Accordion_temp = () => {
       </h2>
       <div className="questions__container container grid">
         <div className="questions__group">
-        <Accordion >
+        <Accordion flush>
         <div className="questions__item">
             <AccordionItem eventKey="0" >
             <Accordion.Header>
@@ -19,7 +19,7 @@ const Accordion_temp = () => {
               My flowers are falling off or dying?
             </h3>
             </Accordion.Header>
-              <Accordion.Body>
+              <Accordion.Body> 
                 <p className="questions__description">
                     Plants are easy way to add color energy and transform your 
                     space but which planet is for you. Choosing the right plant.

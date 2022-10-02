@@ -9,7 +9,7 @@ import Product from './Components/Product/Product';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import { HiArrowUp } from "react-icons/hi";
-import Accordion_temp from './Components/Question/AccordionTemp';
+import AccordionTemp from './Components/Question/AccordionTemp';
 //import data from './QuestionData'
 //import data1 from './QuestionData2'
 //import Questions from './Components/Question/Questions';
@@ -35,7 +35,7 @@ function App() {
         <Product/>
       </div>
       <div>
-      <Accordion_temp/>
+      <AccordionTemp/>
       </div>
       <div >
         <Contact/>
