@@ -1,5 +1,6 @@
 import { useEffect,useState } from "react";
 
+import { Link } from 'react-scroll';
 import { TbLeaf } from "react-icons/tb";
 import { MdDarkMode } from "react-icons/md";
 //import { BiSun } from "react-icons/bi";
@@ -7,7 +8,8 @@ import { MdDarkMode } from "react-icons/md";
 
 import './Header.css'
 const Header=()=>
-{   
+{     
+
     const [theme, setTheme] = useState("light-theme");   
     const toggleTheme =(e)=>{
       e.preventDefault();
@@ -32,19 +34,29 @@ const Header=()=>
           <div className="nav__menu" >
             <ul className="nav__list">
               <li className="nav__item">
-                <a href="#home" className="nav__link active-link">Home</a>
+                <Link activeClass="active"  spy to="home" className="nav__link ">
+                  Home
+                </Link>
               </li>
               <li className="nav__item">
-                <a href="#about" className="nav__link ">About</a>
+                <Link activeClass="active"  spy to="about" className="nav__link">
+                  About
+                </Link>
               </li>
               <li className="nav__item">
-                <a href="#products" className="nav__link">Products</a>
+                <Link activeClass="active"  spy to="products" className="nav__link">
+                  Products
+                </Link>
               </li>
               <li className="nav__item">
-                <a href="#faqs" className="nav__link">FAQs</a>
+                <Link activeClass="active"  spy to="faqs" className="nav__link">
+                FAQs
+                </Link>
               </li>
               <li className="nav__item">
-                <a href="#contact" className="nav__link">Contact Us</a>
+                <Link activeClass="active"  spy to="contact" className="nav__link">
+                Contact Us
+                </Link>
               </li>
             </ul>
           </div>

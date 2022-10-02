@@ -4,7 +4,7 @@ import './StepsCard.css'
 const StepsCard=()=>{
     return(
         
-        <section className="steps section container">
+        <section className="about section abt_container">
             
                 <div className="steps__bg">
                     <h2 className="section__title-center steps__title">

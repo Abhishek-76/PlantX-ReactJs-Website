@@ -14,6 +14,8 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 3rem;
+    position: -webkit-sticky;
+	  position: sticky;
   }
 .nav_container{
     background-color: #FFF;
@@ -78,10 +80,7 @@
       z-index: var(--z-fixed);
     }
   }
-  
-  
- 
-  .nav__menu{
+.nav__menu{
     margin-left: auto;
     
   }
@@ -95,6 +94,7 @@
     color: var(--title-color);
     font-weight: var(--font-medium);
     transition: .3s;
+    cursor: pointer
   }
   
   .nav__link:hover{
@@ -105,24 +105,12 @@
     align-items: center;
     column-gap: 3rem;
   }
-      
-  .scroll-header{
-    box-shadow: 0 1px 4px hsla(var(--hue), 4%, 15%, .1);
-  }
   
-  .active-link{
+.active{
     position: relative;
     color: var(--first-color);
-  }
-  
-  .active-link::after{
-    content: '';
-    position: absolute;
-    bottom: -.5rem;
-    left: 0;
-    width: 50%;
-    height: 2px;
-    background-color: var(--first-color);
+    text-decoration: underline;
+    transition: steps();
   }
   .change-theme{
     color: var(--title-color);
