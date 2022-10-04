@@ -1,26 +1,18 @@
-import { useEffect,useState } from "react";
-
+import { useEffect } from "react";
+import useLocalStorage from 'use-local-storage'
 import { Link } from 'react-scroll';
 import { TbLeaf } from "react-icons/tb";
 import { MdDarkMode } from "react-icons/md";
-//import { BiSun } from "react-icons/bi";
-
-
 import './Header.css'
+
 const Header=()=>
 {     
+    const defaultLight = window.matchMedia('(prefers-color-scheme: light-theme)').matches;
+    const [theme, setTheme] = useLocalStorage('theme', defaultLight ? 'dark' : 'light'); 
 
-    const [theme, setTheme] = useState("light-theme");   
     const toggleTheme =(e)=>{
-      e.preventDefault(this);
+      e.preventDefault();
       theme==="dark-theme" ? setTheme('light-theme') :  setTheme('dark-theme');
-      this.setState(
-        () => {
-          localStorage.setTheme("theme", this.state.theme);
-        }
-      );
-      
-      
     };
     
     useEffect(()=>{
