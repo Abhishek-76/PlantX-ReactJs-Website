@@ -12,8 +12,15 @@ const Header=()=>
 
     const [theme, setTheme] = useState("light-theme");   
     const toggleTheme =(e)=>{
-      e.preventDefault();
+      e.preventDefault(this);
       theme==="dark-theme" ? setTheme('light-theme') :  setTheme('dark-theme');
+      this.setState(
+        () => {
+          localStorage.setTheme("theme", this.state.theme);
+        }
+      );
+      
+      
     };
     
     useEffect(()=>{
@@ -76,3 +83,4 @@ const Header=()=>
 
 }
 export default Header;
+

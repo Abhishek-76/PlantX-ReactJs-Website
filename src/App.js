@@ -20,7 +20,8 @@ function App() {
   //const [questions1, setQuestions1] = useState(data1);
   
   return (
-    <>    
+    
+    <div>    
       <div >
         <Header/>
       </div>
@@ -46,7 +47,7 @@ function App() {
       <a href="#header" className="scrollup" id="scroll-up"> 
         <HiArrowUp className='scrollup__icon'/>
       </a>
-    </>
+    </div>
         
   );
 }
@@ -55,24 +56,6 @@ export default App;
 
 
       
-{/* <section className="questions section">
-<h2 className="section__title-center questions__title container">
-    Some common questions <br/> were often asked
-</h2>
-<div className="questions__container container grid">
-  <div className="questions__group">
-  {questions.map((question) => (
-      <SingleQuestion key={question.id} {...question}/>
-  ))}
 
-  </div>
-  <div className="questions__group">
-  {questions1.map((question2) => (
-      <SingleQuestion key={question2.id} {...question2}/>
-  ))}
-</div>
-</div>
-</section>  
-<Questions/>
-*/}
+
       
