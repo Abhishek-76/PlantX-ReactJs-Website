@@ -110,7 +110,10 @@
     position: relative;
     color: var(--first-color);
     text-decoration: underline;
-    transition: steps();
+    bottom: -.1rem;
+    left: 0;
+    width: 50%;
+    content: '';
   }
   .change-theme{
     color: var(--title-color);

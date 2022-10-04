@@ -4,6 +4,7 @@ import './About.css'
 import { IoMdCheckbox } from "react-icons/io";
 import { BsArrowDownRight } from "react-icons/bs";
 import Fade from 'react-reveal/Fade';
+import StepsCard from './StepsCard';
  
 const About=()=>{
     return(
@@ -51,6 +52,9 @@ const About=()=>{
 
           </div>
           </Fade>
+    </div>
+    <div>
+      <StepsCard/>
     </div>
     
     </section>
