@@ -53,6 +53,8 @@ code {
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
+
+  --bs-highlight-bg:var(--body-color);
 }
 
 

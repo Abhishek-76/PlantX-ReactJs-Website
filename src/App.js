@@ -8,6 +8,7 @@ import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import { HiArrowUp } from "react-icons/hi";
 import AccordionTemp from './Components/Question/AccordionTemp';
+import StepsCard from './Components/About/StepsCard';
 
 function App() {
 
@@ -22,8 +23,9 @@ function App() {
       <div >
         <Home/>
       </div>
-      <div >
+      <div id='about'>
         <About/>
+        <StepsCard/>
       </div>
       <div >
         <Product/>

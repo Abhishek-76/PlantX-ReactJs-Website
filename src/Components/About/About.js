@@ -4,12 +4,11 @@ import './About.css'
 import { IoMdCheckbox } from "react-icons/io";
 import { BsArrowDownRight } from "react-icons/bs";
 import Fade from 'react-reveal/Fade';
-import StepsCard from './StepsCard';
  
 const About=()=>{
     return(
       
-      <section className='about section abt_container' id='about'>
+      <section className='about section abt_container'>
         <div className="about__container grid">
           <Fade left duration={2500}>
             <img src={aboutimg} className="about__img" alt="AboutIMG"/>
@@ -52,9 +51,6 @@ const About=()=>{
 
           </div>
           </Fade>
-    </div>
-    <div>
-      <StepsCard/>
     </div>
     
     </section>

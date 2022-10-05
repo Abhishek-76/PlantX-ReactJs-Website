@@ -110,10 +110,10 @@
     position: relative;
     color: var(--first-color);
     text-decoration: underline;
-    bottom: -.1rem;
-    left: 0;
-    width: 50%;
-    content: '';
+    text-underline-offset: .5rem;
+    text-decoration-thickness: from-font;
+    
+    
   }
   .change-theme{
     color: var(--title-color);

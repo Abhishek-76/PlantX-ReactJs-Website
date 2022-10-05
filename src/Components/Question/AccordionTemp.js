@@ -3,6 +3,7 @@ import  Accordion  from 'react-bootstrap/Accordion'
 import AccordionItem from 'react-bootstrap/esm/AccordionItem'
 import'./Questions.css';
 
+
 const Accordion_temp = () => {
   return (
     <section className="questions section" id="faqs">
@@ -11,7 +12,7 @@ const Accordion_temp = () => {
       </h2>
       <div className="questions__container container grid">
         <div className="questions__group">
-        <Accordion flush>
+        <Accordion>
         <div className="questions__item">
             <AccordionItem eventKey="0" >
             <Accordion.Header>
