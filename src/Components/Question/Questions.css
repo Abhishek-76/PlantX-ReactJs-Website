@@ -19,11 +19,11 @@ p{
   }
   .accordion{
     color: var(--first-color);
-    border-color:var(--first-color) ; 
-    ;
+    border-color:var(--first-color); 
+    
   }
-  .accordion-bg
-  .accordion-btn-bg{
+  .accordion-header
+  .accordion-bg{
     background-color: var(--first-color);
   }
   .accordion-title{

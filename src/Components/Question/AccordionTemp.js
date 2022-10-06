@@ -2,7 +2,7 @@ import React from 'react'
 import  Accordion  from 'react-bootstrap/Accordion'
 import AccordionItem from 'react-bootstrap/esm/AccordionItem'
 import'./Questions.css';
-
+import './accordion.scss';
 
 const Accordion_temp = () => {
   return (
