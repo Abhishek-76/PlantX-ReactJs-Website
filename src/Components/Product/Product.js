@@ -10,7 +10,7 @@ import { BiShoppingBag } from "react-icons/bi";
 import Fade from 'react-reveal/Fade';
 const Product=()=>{
     return(
-        <section className="product section container" id='products'>
+        <section className="product section container" >
                 <h2 className="section__title-center">
                     Check out our <br/> products
                 </h2>

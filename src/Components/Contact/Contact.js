@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 const Contact=()=>
 {
     return(
-        <section className="contact section container" id="contact">
+        <section className="contact section container" >
             
             <div className="contact_container grid">
             <Fade left duration={2500}>

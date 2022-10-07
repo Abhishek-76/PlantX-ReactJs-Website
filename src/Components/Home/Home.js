@@ -10,7 +10,7 @@ const Home=()=>
 {
     return(
       
-      <section className='home' id='home'>
+      <section className='home' >
         <div className="home__container home2_container grid">
             
         <Fade top duration={2000}>

@@ -6,7 +6,7 @@ const Questions=()=>
 {
     
 return(
-    <section className="questions section" id="faqs">
+    <section className="questions section" >
                 <h2 className="section__title-center questions__title container">
                     Some common questions <br/> were often asked
                 </h2>

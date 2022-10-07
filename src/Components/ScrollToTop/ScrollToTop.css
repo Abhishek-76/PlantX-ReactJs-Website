@@ -1,0 +1,30 @@
+.top-to-btm{
+    position: relative;
+  }
+  .icon-position{
+    position: fixed;
+    bottom: 40px;
+    right: 25px;
+    z-index: var(--z-tooltip);;
+  }
+  .icon-style{
+    background-color: #143f27;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    animation: movebtn 1s ease-out ;
+    transition:  all .5s ease-out;
+  }
+  .icon-style:hover{
+    background-color: var(--first-color-alt);
+    opacity: 1;
+  }
+  @keyframes movebtn {
+    0%{
+      transform: translateY(10px);
+    }
+    100%{
+      transform: translateY(-10px);
+    }
+  }  

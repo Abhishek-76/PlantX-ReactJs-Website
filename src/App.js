@@ -6,42 +6,44 @@ import Home from './Components/Home/Home';
 import Product from './Components/Product/Product';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
-import { HiArrowUp } from "react-icons/hi";
+
 import AccordionTemp from './Components/Question/AccordionTemp';
 import StepsCard from './Components/About/StepsCard';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 
 function App() {
-
+  
   
   
   return (
     
     <div>    
+      
       <div >
         <Header/>
       </div>
-      <div >
+      <ScrollToTop/>
+      <div id='home'>
         <Home/>
       </div>
       <div id='about'>
         <About/>
         <StepsCard/>
       </div>
-      <div >
+      <div id='products'>
         <Product/>
       </div>
-      <div>
+      <div id="faqs">
       <AccordionTemp/>
       </div>
-      <div >
+      <div id="contact">
         <Contact/>
       </div>
       <div>
         <Footer/>
       </div>
-      <a href="#header" className="scrollup" id="scroll-up"> 
-        <HiArrowUp className='scrollup__icon'/>
-      </a>
+      
+      
     </div>
         
   );
