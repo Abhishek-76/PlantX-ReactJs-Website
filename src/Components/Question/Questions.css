@@ -22,10 +22,10 @@ p{
     border-color:var(--first-color); 
     
   }
-  .accordion-header
-  .accordion-bg{
-    background-color: var(--first-color);
+  .accordion-collapse{
+    background-color: rgb(20, 54, 17);
   }
+  
   .accordion-title{
     text-align: initial;
   }

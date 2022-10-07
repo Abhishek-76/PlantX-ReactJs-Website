@@ -1,22 +1,22 @@
 import React from 'react'
 import  Accordion  from 'react-bootstrap/Accordion'
-import AccordionItem from 'react-bootstrap/esm/AccordionItem'
+import AccordionItem from 'react-bootstrap/AccordionItem'
 import'./Questions.css';
 import './accordion.scss';
 
 const Accordion_temp = () => {
   return (
     <section className="questions section" id="faqs">
-      <h2 className="section__title-center  ">
+      <h2 className="section__title-center">
         Some common questions <br/> were often asked
       </h2>
       <div className="questions__container container grid">
         <div className="questions__group">
         <Accordion>
-        <div className="questions__item">
+        <div >
             <AccordionItem eventKey="0" >
             <Accordion.Header>
-            <h3 className="questions__item-title">
+            <h3 className="questions__item-title  ">
               My flowers are falling off or dying?
             </h3>
             </Accordion.Header>
