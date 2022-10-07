@@ -22,9 +22,13 @@ p{
     border-color:var(--first-color); 
     
   }
-  .accordion-collapse{
-    background-color: rgb(20, 54, 17);
-  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: var(--container-color);
+}
+.accordion-button {
+  background-color: var(--container-color);
+}
   
   .accordion-title{
     text-align: initial;
@@ -88,20 +92,5 @@ p{
     box-shadow: 0 2px 8px hsla(var(--hue), 4%, 15%, .15);
   }
   
-  /*Rotate icon, change color of titles and background*/
-  .accordion-open .questions__header,
-  .accordion-open .questions__content{
-    background-color: var(--first-color);
-  }
-  
-  .accordion-open .questions__item-title,
-  .accordion-open .questions__description,
-  .accordion-open .questions__icon{
-    color: rgb(32, 105, 26);
-  }
-  
-  .accordion-open .questions__icon{
-    transform: rotate(45deg);
-  }
   
   
