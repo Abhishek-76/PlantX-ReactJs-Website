@@ -2,7 +2,7 @@ import React from 'react'
 import  Accordion  from 'react-bootstrap/Accordion'
 import AccordionItem from 'react-bootstrap/AccordionItem'
 import'./Questions.css';
-
+import Fade from 'react-reveal/Fade';
 
 const Accordion_temp = () => {
   return (
@@ -11,6 +11,7 @@ const Accordion_temp = () => {
         Some common questions <br/> were often asked
       </h2>
       <div className="questions__container container grid">
+      <Fade top cascade duration={2500}>
         <div className="questions__group">
         <Accordion>
         <div >
@@ -63,6 +64,9 @@ const Accordion_temp = () => {
         </Accordion>
         
         </div>
+        </Fade>
+
+        <Fade top cascade duration={2500}>
         <div className="questions__group">
         <Accordion >
         <div className="questions__item">
@@ -115,6 +119,7 @@ const Accordion_temp = () => {
         </Accordion>
         
         </div>
+        </Fade>
       </div>
     </section >
   )

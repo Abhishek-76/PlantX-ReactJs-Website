@@ -1,18 +1,21 @@
 .grid{
-  display: grid;
+  display: flex;
   grid-template-columns:repeat(2, 1fr);
 }
 
 .home{
+  display: flex;
   padding: 13rem 0 5rem;
   margin-top: -60px;
 }
 
 .home__container{
+  
   position: relative;
   row-gap: 2rem;
 }
 .home2_container{
+  display: flex;
   max-width: 968px;
   margin-left: auto;
   margin-right: auto;
@@ -82,7 +85,7 @@
   
 
 .button{
-    display: inline-block;
+    display: inline-flex;
     background-color: var(--first-color);
     color: #FFF;
     padding: 1rem 1.75rem;
