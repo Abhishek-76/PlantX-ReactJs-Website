@@ -1,8 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import useLocalStorage from 'use-local-storage'
 import { Link } from 'react-scroll';
 import { TbLeaf } from "react-icons/tb";
 import { MdDarkMode } from "react-icons/md";
+import { AiOutlineMenu } from "react-icons/ai";
 import './Header.css'
 
 const Header=()=>
@@ -19,6 +20,7 @@ const Header=()=>
       document.body.className = theme;
     },[theme]);
 
+    const [openMenu, setOpenmenu]=useState(false);
     
 
     return (
@@ -58,14 +60,21 @@ const Header=()=>
                 </Link>
               </li>
             </ul>
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-line"></i>
+            </div>
           </div>
          
-          
-          <a href="darkMode" className="nav__btns" onClick={toggleTheme}>
-            
+        <div class="nav__btns">
+          <a href="darkMode" onClick={toggleTheme}>
             <MdDarkMode className='change-theme' id="theme-button" />         
-            
           </a>
+
+          <div class="nav__toggle" >
+            <AiOutlineMenu onClick={() => {
+          setOpenmenu(!openMenu)}}/>
+          </div>
+        </div>
                                 
              
         </nav>
