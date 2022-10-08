@@ -27,7 +27,7 @@ const Header=()=>
         
         <nav className='nav nav_container'>   
           <a href="#logo" className="nav__logo">
-            <TbLeaf className=" nav__logo-icon"/>PlantX
+            <TbLeaf className=" nav__logo-icon"/>Plant X
           </a>  
           
           <div className="nav__menu" >
