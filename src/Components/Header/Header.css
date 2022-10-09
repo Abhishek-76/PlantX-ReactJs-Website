@@ -71,7 +71,7 @@
     cursor: pointer;
   }
 
-  @media screen and (max-width: 767px){
+  @media only screen and (max-width: 767px){
     .nav__menu{
       position: fixed;
       background-color: var(--container-color);
