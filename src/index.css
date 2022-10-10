@@ -1,15 +1,4 @@
-body {
-  margin: 0;
-  font-family: var(--body-font);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
   --header-height: 3.5rem; /*56px*/
@@ -58,7 +47,7 @@ code {
   --bs-highlight-bg:var(--body-color);
 }
 
-@media screen and (min-width: 968px) {
+@media only screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
     --h1-font-size: 2.25rem;
@@ -70,7 +59,37 @@ code {
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: var(--body-font);
+  margin: var(--header-height) 0 0 0;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: .4s; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+::-webkit-scrollbar{
+  width: .6rem;
+  background: hsl(var(--hue), 4%, 53%);
+}
+
+::-webkit-scrollbar-thumb{
+  background: hsl(var(--hue), 4%, 29%);
+  border-radius: .5rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 html{
   scroll-behavior: smooth;
@@ -79,33 +98,27 @@ body
 button,
 input,
 textarea{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
     }
-body{
-  margin: var(--header-height) 0 0 0;
-  background-color: var(--body-color);
-  color: var(--text-color);
-  transition: .4s; 
-    }
+
 img{
-  display: flex;
-    max-width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 a{
   text-decoration: none;
 }
+
 a:hover{
   color: var(--first-color);
 }
+
 h1,h2,h3{
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
-  margin: 0;
-}
-p{
-  margin: 0;
+ 
 }
 ul{
     list-style: none;
@@ -114,28 +127,71 @@ button{
     cursor: pointer;
     border: none;
     outline: none;
-  }
+}
+
 .section{
-  padding: 8rem 0 1rem;
+  padding: 5.5rem 0 1rem;
 }
  .section__title,
  .section__title-center{
-    font-size: 1.5rem;
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-2);
+  line-height: 140%;
 }
 .section__title-center{
-  font-size: 24px;
-  margin-bottom: 2rem;
-  line-height: 140%;
   text-align: center;
 }
 .container{
-    display: flex;
-    flex-direction: column;
-    margin-left: 154px;
-    margin-right: 154px;
+  max-width: 968px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+.grid{
+  display: grid;
+}
+/* Button */
+.button{
+  display: inline-flex;
+  background-color: var(--first-color);
+  color: #FFF;
+  padding: 1rem 1.75rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+  transition: .3s;
+  border-color: #3e6553;
+  
 }
 
-@media screen and (max-width: 320px){
+.button:hover{
+  background-color: var(--first-color-alt);
+}
+
+.button__icon{
+  transition: .3s;
+}
+
+.button:hover .button__icon{
+  transform: translateX(.25rem);
+}
+
+.button--flex{
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+.button--link{
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+}
+
+.button--link:hover .button__icon{
+transform: translateX(.25rem);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media only screen and (max-width: 320px){
   .container{
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -162,7 +218,7 @@ button{
 }
 
 /* For medium devices */
-@media screen and (min-width: 576px){
+@media only screen and (min-width: 576px){
   .steps__container{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -225,23 +281,8 @@ button{
   }
 
   .questions__container{
-    align-items: flex;
+    align-items: flex-start;
   }
-  .questions{
-    background-color:  var(--first-color-lighten);
-  }
-  .questions__title{
-    text-align: center;
-  }
-  .section__title,
-  .section__title-center{
-  font-size: 2.25rem;
-  margin-bottom: 2rem;
-  line-height: 140%;
-}
-.section__title-center{
-  text-align: center;
-}
 
   .footer__container{
     column-gap: 3rem;
@@ -252,7 +293,7 @@ button{
 }
 
 /* For large devices */
-@media screen and (min-width: 992px){
+@media only screen and (min-width: 992px){
   .container{
     margin-left: auto;
     margin-right: auto;
@@ -335,9 +376,10 @@ button{
   .footer__copy{
     margin: 7rem 0 2rem;
   }
+  
 }
 
-@media screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px){
   .home__social{
     right: -3rem;
     row-gap: 4.5rem;

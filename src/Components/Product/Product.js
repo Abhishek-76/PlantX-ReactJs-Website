@@ -1,11 +1,11 @@
 import  './Product.css';
 import React from 'react';
-import prd1 from '../Assets/product1.png';
-import prd2 from '../Assets/product2.png';
-import prd3 from '../Assets/product3.png';
-import prd4 from '../Assets/product4.png';
-import prd5 from '../Assets/product5.png';
-import prd6 from '../Assets/product6.png';
+import prd1 from '../../Assets/product1.png';
+import prd2 from '../../Assets/product2.png';
+import prd3 from '../../Assets/product3.png';
+import prd4 from '../../Assets/product4.png';
+import prd5 from '../../Assets/product5.png';
+import prd6 from '../../Assets/product6.png';
 import { BiShoppingBag } from "react-icons/bi";
 import Fade from 'react-reveal/Fade';
 const Product=()=>{

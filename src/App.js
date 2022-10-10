@@ -13,12 +13,12 @@ function App() {
   
   return (
     
-    <div>    
-      
+    <div>
       <div >
         <Header/>
       </div>
       <ScrollToTop/>
+    <div className='main'>
       <div id='home'>
         <Home/>
       </div>
@@ -38,7 +38,7 @@ function App() {
       <div>
         <Footer/>
       </div>
-      
+    </div> 
       
     </div>
         

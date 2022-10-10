@@ -1,5 +1,5 @@
 import React from 'react'
-import homeimg from '../Assets/home.png'
+import homeimg from '../../Assets/home.png'
 import { CgFacebook } from "react-icons/cg";
 import { FaInstagram } from "react-icons/fa";
 import { IoLogoTwitter } from "react-icons/io";
@@ -11,8 +11,10 @@ const Home=()=>
     return(
       
       <section className='home' >
-        <div className="home__container home2_container grid">
-            
+        <div className="home__container container grid">
+        <Fade top duration={2500}>
+          <img src={homeimg} alt="" className="home__img"/>
+        </Fade>
         <Fade top duration={2000}>
             <div className="home__data">
               <h1 className="home__title">
@@ -27,9 +29,7 @@ const Home=()=>
               </a>
             </div>
             </Fade>
-            <Fade top duration={2500}>
-              <img src={homeimg} alt="" className="home__img"/>
-            </Fade>
+            
             <Fade top duration={2200}>
               <div className="home__social">
                 <span className="home__social-follow">Follow Us</span>

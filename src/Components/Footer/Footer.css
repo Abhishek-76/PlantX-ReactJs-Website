@@ -1,37 +1,35 @@
 .footer__container{
     row-gap: 3rem;
-    grid-template-columns: 1fr .5fr .5fr .5fr;
-    column-gap: 3rem;
   }
   
   .footer__logo{
     display: inline-flex;
     align-items:center;
     column-gap: .5rem;
-    color: hsl(152, 4%, 15%);
+    color: var(--title-color);
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: -1px;
-    margin-bottom: 2.5rem;
+    margin-bottom: var(--mb-2-5);
     transition: .3s;
   }
   
   .footer__logo-icon{
     font-size: 1.15rem;
-    color: hsl(152, 24%, 32%);
+    color: var(--first-color);
   }
   
   .footer__logo:hover{
-    color: hsl(152, 24%, 32%);
+    color: var(--first-color);
   }
   
   .footer__title{
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1-5);
   }
   
   .footer__subscribe{
-    background-color:hsl(152, 24%, 66%);
+    background-color:var(--first-color-lighten);
     padding: .75rem;
     display: flex;
     justify-content: space-between;
@@ -43,7 +41,7 @@
     width: 70%;
     padding: 0 .5rem;
     background: none;
-    color:hsl(152, 4%, 35%);
+    color:var(--text-color);
     border: none;
     outline: none;
   }
@@ -59,7 +57,7 @@
   }
   
   .footer__information{
-    font-size: 500;
+    font-size: var(--small-font-size);
   }
   
   .footer__social{
@@ -69,7 +67,7 @@
   
   .footer__social-link{
     font-size: 1rem;
-    color: hsl(152, 4%, 35%);
+    color: var(--text-color);
     transition: .3s;
   }
   
@@ -88,8 +86,8 @@
   
   .footer__copy{
     text-align: center;
-    font-size: 500;
-    color: hsl(152, 4%, 55%);
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
     margin: 5rem 0 1rem;
   }
 

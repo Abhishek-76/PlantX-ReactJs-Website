@@ -1,48 +1,31 @@
-.section{
-  padding: 5.5rem 0 1rem;
-}
-.section__title,
-.section__title-center{
-  font-size: 2.25rem;
-  margin-bottom: 2rem;
-  line-height: 140%;
-}
 
-.section__title-center{
-  text-align: center;
-}
 p{
   color: var(--title-color);
 }
 .questions{
     background-color:  var(--first-color-lighten);
   }
-  .accordion{
-    color: var(--first-color);
-    border-color:var(--first-color); 
-    
-  }
   
-  .accordion-button:not(.collapsed) {
-    background-color: var(--container-color);
+.accordion-button:not(.collapsed) {
+  background-color: var(--container-color);
 }
 .accordion-button {
   background-color: var(--container-color);
 }
   
-  .accordion-title{
-    text-align: initial;
-  }
+.accordion-title{
+  text-align: initial;
+}
   
-  .questions__container{
+.questions__container{
     gap: 1.5rem;
     padding: 1.5rem 0;
-  }
+}
   
-  .questions__group{
-    display: grid;
-    row-gap: 2rem;
-  }
+.questions__group{
+  display: grid;
+  row-gap: 1.5rem;
+}
   
   .accordion-item{
     background-color: var(--container-color);

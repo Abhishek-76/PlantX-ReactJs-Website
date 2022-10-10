@@ -27,7 +27,7 @@ const Header = () => {
 
     <header className='header'>
 
-      <nav className='nav nav_container'>
+      <nav className='nav container'>
         <a href="#logo" className="nav__logo">
           <TbLeaf className=" nav__logo-icon" />Plant X
         </a>
@@ -66,7 +66,7 @@ const Header = () => {
         </div>
 
         <div className="nav__btns">
-          <a href="darkMode" onClick={toggleTheme}>
+          <a href="darkMode " onClick={toggleTheme}>
             <MdDarkMode className='change-theme' id="theme-button" />
           </a>
 
