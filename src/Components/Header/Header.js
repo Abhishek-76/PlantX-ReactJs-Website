@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import useLocalStorage from 'use-local-storage'
 import { Link } from 'react-scroll';
 import { TbLeaf } from "react-icons/tb";
 import { MdDarkMode } from "react-icons/md";
 import { AiOutlineMenu } from "react-icons/ai";
+import { BiSun } from "react-icons/bi";
 import './Header.css'
 
 const Header = () => {
@@ -19,7 +20,7 @@ const Header = () => {
     document.body.className = theme;
   }, [theme]);
 
-  const [openMenu, setOpenmenu] = useState(false);
+  
 
 
   return (
@@ -59,20 +60,18 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <div class="nav__close" id="nav-close">
-            <i class="ri-close-line"></i>
+          <div className="nav__close" id="nav-close">
+            <BiSun/>
           </div>
         </div>
 
-        <div class="nav__btns">
+        <div className="nav__btns">
           <a href="darkMode" onClick={toggleTheme}>
             <MdDarkMode className='change-theme' id="theme-button" />
           </a>
 
-          <div class="nav__toggle" >
-            <AiOutlineMenu onClick={() => {
-              setOpenmenu(!openMenu)
-            }} />
+          <div className="nav__toggle" >
+            <AiOutlineMenu/> 
           </div>
         </div>
 
