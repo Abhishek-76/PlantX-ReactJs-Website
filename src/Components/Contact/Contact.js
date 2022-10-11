@@ -37,7 +37,7 @@ const Contact=()=>
                     </div>
                 </div>
                 </Fade>
-            <form action="" className="contact__form">
+            <form className="contact__form" name="contact" netlify>
             <Fade right duration={2500}>
                 <div className="contact__inputs">
                     <div className="contact__content">
