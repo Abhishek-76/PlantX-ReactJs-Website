@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 import { TbLeaf } from "react-icons/tb";
 import { MdDarkMode } from "react-icons/md";
 import { AiOutlineMenu } from "react-icons/ai";
-import { GrClose } from "react-icons/gr";
+import { AiOutlineClose } from "react-icons/ai";
 import './Header.css'
 
 const Header = () => {
@@ -64,7 +64,7 @@ const Header = () => {
             </li>
           </ul>
           <div className="nav__close" id="nav-close">
-            <GrClose onClick={toggleNav}/>
+            <AiOutlineClose onClick={toggleNav}/>
           </div>
         </div>
         <div className="nav__btns">
