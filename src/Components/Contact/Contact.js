@@ -54,7 +54,7 @@ const Contact=()=>
                         <label  className="contact__label">Message</label>
                     </div>
                 </div>
-                <button className="button button--flex">
+                <button type="submit" className="button button--flex">
                     Send Message
                     <RiArrowRightUpLine className="button__icon"/>
                 </button>
