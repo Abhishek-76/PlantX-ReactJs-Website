@@ -32,3 +32,22 @@
   color: var(--first-color);
   margin-top: .15rem;
 }
+
+
+@media only screen and (min-width: 767px){
+  .about__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* For large devices */
+@media only screen and (min-width: 992px){
+  .about__img{
+    width: 380px;
+  }
+}
+@media only screen and (min-width: 1200px){
+  
+  .about__container{
+    column-gap: 7rem;
+  }
+}

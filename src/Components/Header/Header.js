@@ -1,15 +1,21 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import useLocalStorage from 'use-local-storage'
 import { Link } from 'react-scroll';
 import { TbLeaf } from "react-icons/tb";
 import { MdDarkMode } from "react-icons/md";
 import { AiOutlineMenu } from "react-icons/ai";
-import { BiSun } from "react-icons/bi";
+import { GrClose } from "react-icons/gr";
 import './Header.css'
 
 const Header = () => {
+  const[isNavOpen,setNavOpen]= useState(false);
+
   const defaultLight = window.matchMedia('(prefers-color-scheme: light-theme)').matches;
   const [theme, setTheme] = useLocalStorage('theme', defaultLight ? 'dark' : 'light');
+
+  const toggleNav =()=>{
+    setNavOpen(!isNavOpen);
+  };
 
   const toggleTheme = (e) => {
     e.preventDefault();
@@ -20,8 +26,6 @@ const Header = () => {
     document.body.className = theme;
   }, [theme]);
 
-  
-
 
   return (
 
@@ -31,8 +35,7 @@ const Header = () => {
         <a href="#logo" className="nav__logo">
           <TbLeaf className=" nav__logo-icon" />Plant X
         </a>
-
-        <div className="nav__menu" >
+          <div className={isNavOpen ? "nav__menu active" : "nav__menu"} >
           <ul className="nav__list">
             <li className="nav__item">
               <Link activeClass="active" spy to="home" className="nav__link ">
@@ -61,17 +64,16 @@ const Header = () => {
             </li>
           </ul>
           <div className="nav__close" id="nav-close">
-            <BiSun/>
+            <GrClose onClick={toggleNav}/>
           </div>
         </div>
-
         <div className="nav__btns">
           <a href="darkMode " onClick={toggleTheme}>
             <MdDarkMode className='change-theme' id="theme-button" />
           </a>
 
           <div className="nav__toggle" >
-            <AiOutlineMenu/> 
+            <AiOutlineMenu onClick={toggleNav}/> 
           </div>
         </div>
 

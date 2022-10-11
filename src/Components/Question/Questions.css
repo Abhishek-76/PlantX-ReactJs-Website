@@ -75,5 +75,32 @@ p{
     box-shadow: 0 2px 8px hsla(var(--hue), 4%, 15%, .15);
   }
   
+/* For medium devices */
+@media only screen and (min-width: 767px){
+  .questions__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .questions__container{
+    align-items: flex-start;
+  }
+}
+/* For large devices */
+@media only screen and (min-width: 992px){
+  .questions__container{
+    padding: 1rem 0 4rem;
+  }
+  .questions__title{
+    text-align: initial;
+  }
+  .questions__group{
+    row-gap: 2rem;
+  }
+  .questions__header{
+    padding: 1rem;
+  }
+  .questions__description{
+    padding: 0 3.5rem 2.25rem 2.75rem;
+  }
+}
   
   

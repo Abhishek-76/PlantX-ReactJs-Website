@@ -91,3 +91,41 @@
     margin: 5rem 0 1rem;
   }
 
+ /* For medium devices */
+@media only screen and (min-width: 576px){
+
+  .footer__subscribe{
+      width: 400px;
+    }
+} 
+@media only screen and (min-width: 767px){
+  body{
+    margin: 0;
+  }
+  
+  
+  .footer__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  
+  .footer__container{
+    column-gap: 3rem;
+  }
+  .footer__subscribe{
+    width: initial;
+  }
+}
+/* For large devices */
+@media only screen and (min-width: 992px){
+  .footer__logo{
+    font-size: var(--h3-font-size);
+  }
+  .footer__container{
+    grid-template-columns: 1fr .5fr .5fr .5fr;
+  }
+  .footer__copy{
+    margin: 7rem 0 2rem;
+  }
+}
+

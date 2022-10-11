@@ -66,4 +66,64 @@
     transform: translateX(.25rem);
 }
 
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media only screen and (max-width: 320px){
+  .home__img{
+    width: 180px;
+  }
+  .home__title{
+    font-size: var(--h1-font-size);
+  }
+  
 
+}
+
+@media only screen and (min-width: 767px){
+.home__container{
+  grid-template-columns: repeat(2, 1fr);
+}
+.home{
+  padding: 10rem 0 5rem;
+}
+.home__container{
+  align-items: center;
+}
+.home__img{
+  width: 280px;
+  order: 1;
+}
+.home__social{
+  top: 30%;
+}
+
+}
+
+/* For large devices */
+@media only screen and (min-width: 992px){
+  .home{
+    padding: 13rem 0 5rem;
+  }
+  .home__img{
+    width: 350px;
+  }
+  .home__description{
+    padding-right: 7rem;
+  }
+}
+@media only screen and (min-width: 1200px){
+  .home__social{
+    right: -3rem;
+    row-gap: 4.5rem;
+  }
+  .home__social-follow{
+    font-size: var(--small-font-size);
+  }
+  .home__social-follow::after{
+    width: 1.5rem;
+    right: -60%;
+  }
+  .home__social-link{
+    font-size: 1.15rem;
+  }
+}

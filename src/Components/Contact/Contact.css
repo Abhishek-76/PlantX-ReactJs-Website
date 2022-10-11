@@ -64,7 +64,7 @@
     transition: .3s;
 }
   
-contact__area{
+.contact__area{
     height: 7rem;
 }
   
@@ -85,4 +85,10 @@ contact__area{
     top: -.75rem;
     font-size: var(--smaller-font-size);
     z-index: 10;
+}
+
+@media only screen and (min-width: 767px){
+  .contact__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
