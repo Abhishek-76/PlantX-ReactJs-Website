@@ -84,7 +84,7 @@
 }
 
   
-/* .active{
+ .active{
     position: relative;
     color: var(--first-color);
     text-decoration: underline;
@@ -93,7 +93,7 @@
     
     
   }
- 
+/* 
 .active-link::after{
   content: '';
   position: absolute;
