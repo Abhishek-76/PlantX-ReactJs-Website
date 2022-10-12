@@ -90,19 +90,8 @@
     text-decoration: underline;
     text-underline-offset: .5rem;
     text-decoration-thickness: from-font;
-    
-    
-  }
-/* 
-.active-link::after{
-  content: '';
-  position: absolute;
-  bottom: -.5rem;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--first-color);
-  }  */
+}
+
 
 /* Change background header */
 .change-theme{
