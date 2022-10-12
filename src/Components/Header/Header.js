@@ -38,7 +38,7 @@ const Header = () => {
           <div className={isNavOpen ? "nav__menu active" : "nav__menu"} >
           <ul className="nav__list">
             <li className="nav__item">
-              <Link activeClass="active" spy to="home" className="nav__link ">
+              <Link activeClass="active" spy to="home" className="nav__link" >
                 Home
               </Link>
             </li>

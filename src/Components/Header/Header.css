@@ -84,7 +84,7 @@
 }
 
   
- .active{
+.active{
     position: relative;
     color: var(--first-color);
     text-decoration: underline;
@@ -181,6 +181,9 @@
     gap: 50px;
     align-items: center;
     justify-content: center;
+    }
+    .active{
+      text-decoration: none;
     }
     
 }
